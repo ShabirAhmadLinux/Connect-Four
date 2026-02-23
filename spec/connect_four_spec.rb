@@ -10,7 +10,7 @@ describe ConnectFour do # rubocop:disable Metrics/BlockLength
       it 'changes previous turn to player2 and player2 drops' do
         allow(player2).to receive(:drop)
         allow(player1).to receive(:eql?).and_return true
-        expect(player2).to receive(:drop)
+        expect(player2).to receive(:drop_on)
         game_turn.play_turn
       end
     end

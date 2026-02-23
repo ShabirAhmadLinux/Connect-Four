@@ -11,7 +11,7 @@ class ConnectFour
 
   def play_turn
     @turn = player1.eql?(turn) ? player2 : player1
-    turn.drop(board)
+    turn.drop_on(board)
   end
 
   def play_game
